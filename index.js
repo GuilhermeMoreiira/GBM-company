@@ -8,7 +8,7 @@ revelar.reveal('.txt-introducao, .btn-servicos, .servicos, .servicos-container',
     }
 )
 
-revelar.reveal('.text-pergunta',
+revelar.reveal('.text-pergunta, .contatoin, .forms',
     {
         duration: 3000,
         delay: 150,
@@ -17,7 +17,7 @@ revelar.reveal('.text-pergunta',
     }
 )
 
-revelar.reveal('.explicacao-border',
+revelar.reveal('.explicacao-border, .endereco',
     {
         duration: 3000,
         delay: 150,

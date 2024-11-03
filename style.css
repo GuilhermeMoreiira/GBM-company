@@ -194,62 +194,122 @@ a {
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.473);
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .contato { 
     height: 90vh;
+    padding: 2rem;
+}
+
+.contato h3 {
+    font-size: 2rem;
+    padding: 3rem 2rem 3rem 2rem;
 }
 
 .contato-content {
-    padding: 10rem 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens dentro do contêiner */
+}
+
+
+.endereco {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: center; /* Centraliza o iframe dentro do contêiner */
 }
 
 .forms {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    flex: 1; 
+    margin-right: 1rem; /* Reduzi a margem à direita */
 }
-.contato h3 { 
-    font-size: 2rem; 
-    padding: 3rem 2rem 0 2rem; 
-} 
-.contato input[type="text"] { 
-    margin: 0 2rem 1rem 2rem; 
+
+.contato input[type="text"] {
+    margin: 0 2rem 1rem 2rem;
     padding: 1rem 1rem; 
     width: 80%; 
-    border: 1px solid transparent; 
-    border-radius: 5px; 
-    background-color: #d0cfcf;
-
-} .contato input[type="text2"] { 
-    margin: 0 0.2rem 0 2rem;
-    padding: 1rem 1rem; 
-    width: 40%; border: 1px solid transparent; 
-    border-radius: 5px; background-color: #d0cfcf; 
-} 
-    
-.contato input[type="tel"] {
-    margin: 0 0.2rem; 
-    padding: 1rem 1rem; 
-    width: 39.5%; 
     border: 1px solid transparent; 
     border-radius: 5px; 
     background-color: #d0cfcf; 
 }
 
-input:focus {
-    outline: none;
+.contato input[type="text2"] {
+    margin: 0 0.2rem 0 2rem;
+    padding: 1rem 1rem;
+    width: 40%; 
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #d0cfcf;
+}
+
+.contato input[type="tel"] {
+    margin: 0 0.2rem;
+    padding: 1rem 1rem;
+    width: 39.5%; 
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #d0cfcf;
 }
 
 textarea {
+    width: 80%;
     border: 1px solid transparent;
     background-color: #d0cfcf;
     outline: none;
-    margin: 1rem 2rem;
+    margin: 1rem 0;
     border-radius: 5px;
+    resize: vertical; 
+}
+
+input:focus {
+    outline: none; 
+}
+
+/* Tablets */
+
+@media (min-width: 768px) { 
+    
+    .seta-bottom {
+        color: #ffff;
+        font-size: 30px;
+        position: absolute;
+        top: 104%;
+        left: 49%;
+    }
+
+    .text-pergunta {
+        padding: 15% 6% 0 10%;
+        font-size: 24px;
+        width: 1000px;
+    }
+    
+    .text-explicacao {
+        padding: 9rem 9rem;
+        width: 900px;
+    }
+    
+    .btn-explixcacao {
+        margin: auto;
+        width: 300px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        background-image: linear-gradient(to right, #5B47C0, #b155b5);
+        text-align: center;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contato H3 {
+        font-size: 2rem;
+    }
+    
+    textarea {
+        border: 1px solid transparent;
+        background-color: #d0cfcf;
+        outline: none;
+        margin: 1rem 2rem;
+        border-radius: 5px;
+    }
 }
