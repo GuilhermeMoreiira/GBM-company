@@ -194,79 +194,6 @@ a {
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.473);
 }
 
-.contato { 
-    height: 90vh;
-    padding: 2rem;
-}
-
-.contato h3 {
-    font-size: 2rem;
-    padding: 3rem 2rem 3rem 2rem;
-}
-
-.contato-content {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os itens dentro do contêiner */
-}
-
-
-.endereco {
-    flex: 1;
-    max-width: 600px;
-    display: flex;
-    justify-content: center; /* Centraliza o iframe dentro do contêiner */
-}
-
-.forms {
-    display: flex;
-    flex-direction: column; 
-    flex: 1; 
-    margin-right: 1rem; /* Reduzi a margem à direita */
-}
-
-.contato input[type="text"] {
-    margin: 0 2rem 1rem 2rem;
-    padding: 1rem 1rem; 
-    width: 80%; 
-    border: 1px solid transparent; 
-    border-radius: 5px; 
-    background-color: #d0cfcf; 
-}
-
-.contato input[type="text2"] {
-    margin: 0 0.2rem 0 2rem;
-    padding: 1rem 1rem;
-    width: 40%; 
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #d0cfcf;
-}
-
-.contato input[type="tel"] {
-    margin: 0 0.2rem;
-    padding: 1rem 1rem;
-    width: 39.5%; 
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #d0cfcf;
-}
-
-textarea {
-    width: 80%;
-    border: 1px solid transparent;
-    background-color: #d0cfcf;
-    outline: none;
-    margin: 1rem 0;
-    border-radius: 5px;
-    resize: vertical; 
-}
-
-input:focus {
-    outline: none; 
-}
-
 /* Tablets */
 
 @media (min-width: 768px) { 
@@ -275,7 +202,7 @@ input:focus {
         color: #ffff;
         font-size: 30px;
         position: absolute;
-        top: 104%;
+        top: 102%;
         left: 49%;
     }
 
@@ -301,15 +228,62 @@ input:focus {
         cursor: pointer;
     }
 
+    .contato {
+        height: 90vh;
+    }
+
     .contato H3 {
         font-size: 2rem;
+        padding: 2rem 0 0 17rem;
+    }
+
+    .contato-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 4rem 0;
+    }
+
+    input[type="text"] {
+        background-color: #d0cfcf;
+        width: 100%;
+        padding: 0.6rem;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    input[type="text2"], input[type="tel"] {
+        background-color: #d0cfcf;
+        padding: 0.6rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .assunto {
+        margin: 0;
+        height: 20rem;
     }
     
     textarea {
-        border: 1px solid transparent;
+        width: 100%;
+        margin: 1rem 0 !important;
+        height: 14rem;
+        border: none;
         background-color: #d0cfcf;
         outline: none;
-        margin: 1rem 2rem;
         border-radius: 5px;
+    }
+
+    button {
+        width: 30%;
+        color: #ffff;
+        border: 1px solid rgba(0, 0, 0, 0);
+        background-image: linear-gradient(to right, #5B47C0, #b155b5);
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 0.6rem;
     }
 }
