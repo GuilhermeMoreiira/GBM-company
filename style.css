@@ -194,6 +194,67 @@ a {
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.473);
 }
 
+.contato {
+    height: 90vh;
+}
+
+.contato H3 {
+    font-size: 3rem;
+    padding: 8rem 0 0 26rem;
+    color: #5B47C0;
+}
+
+.contato-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 4rem 0;
+}
+
+input[type="text"] {
+    background-color: #d0cfcf;
+    width: 100%;
+    padding: 1.4rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    border-color: #5B47C0;
+}
+
+input[type="text2"], input[type="tel"] {
+    background-color: #d0cfcf;
+    padding: 1.4rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.assunto {
+    margin: 0;
+    height: 20rem;
+}
+
+textarea {
+    width: 100%;
+    margin: 1rem 0 !important;
+    height: 14rem;
+    border: none;
+    background-color: #d0cfcf;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 45%;
+    color: #ffff;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, #5B47C0, #b155b5);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.6rem;
+}
+
 /* Tablets */
 
 @media (min-width: 768px) { 
@@ -202,7 +263,7 @@ a {
         color: #ffff;
         font-size: 30px;
         position: absolute;
-        top: 102%;
+        top: 100%;
         left: 49%;
     }
 
@@ -219,71 +280,7 @@ a {
     
     .btn-explixcacao {
         margin: auto;
-        width: 300px;
-        border: 1px solid rgba(0, 0, 0, 0);
-        background-image: linear-gradient(to right, #5B47C0, #b155b5);
-        text-align: center;
-        padding: 1rem;
-        border-radius: 5px;
-        cursor: pointer;
     }
 
-    .contato {
-        height: 90vh;
-    }
 
-    .contato H3 {
-        font-size: 2rem;
-        padding: 2rem 0 0 17rem;
-    }
-
-    .contato-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        padding: 4rem 0;
-    }
-
-    input[type="text"] {
-        background-color: #d0cfcf;
-        width: 100%;
-        padding: 0.6rem;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 5px;
-    }
-
-    input[type="text2"], input[type="tel"] {
-        background-color: #d0cfcf;
-        padding: 0.6rem;
-        border: none;
-        border-radius: 5px;
-    }
-
-    .assunto {
-        margin: 0;
-        height: 20rem;
-    }
-    
-    textarea {
-        width: 100%;
-        margin: 1rem 0 !important;
-        height: 14rem;
-        border: none;
-        background-color: #d0cfcf;
-        outline: none;
-        border-radius: 5px;
-    }
-
-    button {
-        width: 30%;
-        color: #ffff;
-        border: 1px solid rgba(0, 0, 0, 0);
-        background-image: linear-gradient(to right, #5B47C0, #b155b5);
-        text-align: center;
-        border-radius: 5px;
-        cursor: pointer;
-        padding: 0.6rem;
-    }
 }
