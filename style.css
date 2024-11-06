@@ -255,32 +255,75 @@ button {
     padding: 0.6rem;
 }
 
-/* Tablets */
-
-@media (min-width: 768px) { 
-    
+@media (max-width: 1280px) {
     .seta-bottom {
-        color: #ffff;
-        font-size: 30px;
-        position: absolute;
-        top: 100%;
+        top: 101%;
         left: 49%;
     }
 
     .text-pergunta {
-        padding: 15% 6% 0 10%;
-        font-size: 24px;
-        width: 1000px;
+        padding: 20% 6% 0 10%;
+        font-size: 30px;
+        width: 1200px;
+    }
+
+    .explicacao-border {
+        height: 500px;
     }
     
     .text-explicacao {
         padding: 9rem 9rem;
-        width: 900px;
+        width: 1000px;
     }
     
     .btn-explixcacao {
         margin: auto;
     }
 
+    .contato H3 {
+        font-size: 3rem;
+        padding: 8rem 0 0 7rem;
+    }
+    
+}
 
+/* Tablets */
+
+@media (max-width: 768px) {
+
+    .seta-bottom {
+        top: 101%;
+        left: 45%; 
+    }
+
+    .text-pergunta {
+        padding: 10% 4% 0 5%; /* Reduz o padding para melhorar o uso do espaço */
+        font-size: 22px; /* Diminui o tamanho da fonte */
+        width: 90%; /* Deixa a largura mais responsiva */
+    }
+
+    .explicacao-border {
+        height: 400px; /* Reduz a altura para caber melhor */
+    }
+
+    .text-explicacao {
+        padding: 5rem 3rem; /* Diminui o padding para melhor ajuste */
+        width: 100%; /* Usa a largura total disponível */
+    }
+
+    .btn-explixcacao {
+        margin: 20px auto; /* Adiciona um pouco de margem para separar do conteúdo */
+    }
+
+    .contato h3 {
+        font-size: 2rem; /* Diminui o tamanho da fonte */
+        padding: 5rem 0 0 2rem; /* Reduz o padding lateral */
+    }
+} 
+
+@media (max-width: 480px) {
+    /* Estilos específicos para smartphones */
+    .elemento {
+        /* Ajustes adicionais para caber em telas menores */
+    }
 }
